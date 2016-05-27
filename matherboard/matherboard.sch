@@ -137,17 +137,6 @@ F 3 "" H 4250 2450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X02 P1
-U 1 1 5739B957
-P 1500 1300
-F 0 "P1" H 1500 1450 50  0000 C CNN
-F 1 "VCC/GND" V 1600 1300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1500 1300 50  0001 C CNN
-F 3 "" H 1500 1300 50  0000 C CNN
-	1    1500 1300
-	-1   0    0    1   
-$EndComp
-$Comp
 L STAB3.3 U3
 U 1 1 5739C06C
 P 2500 1100
@@ -286,11 +275,9 @@ Wire Wire Line
 Wire Wire Line
 	2950 1350 3450 1350
 Wire Wire Line
-	3050 1350 3050 1050
+	3050 1050 3050 1350
 Wire Wire Line
-	3050 1050 1700 1050
-Wire Wire Line
-	1700 1050 1700 1250
+	1050 1050 3050 1050
 Wire Wire Line
 	2500 1700 2950 1700
 Wire Wire Line
@@ -302,10 +289,6 @@ Wire Wire Line
 	2050 1800 3050 1800
 Wire Wire Line
 	3050 1800 3050 1550
-Wire Notes Line
-	3200 850  3200 1950
-Wire Notes Line
-	1300 850  1300 1950
 Wire Notes Line
 	5600 1250 5600 4350
 Wire Notes Line
@@ -340,11 +323,9 @@ Wire Wire Line
 Wire Wire Line
 	1850 1350 2050 1350
 Wire Wire Line
-	1700 1350 1750 1350
+	1500 1350 1750 1350
 Wire Notes Line
-	1300 850  3200 850 
-Wire Notes Line
-	1300 1950 3200 1950
+	850  850  3200 850 
 Wire Wire Line
 	3650 1400 3650 3450
 Wire Wire Line
@@ -470,4 +451,51 @@ Wire Wire Line
 	3650 3400 3650 4500
 Connection ~ 3650 3400
 Connection ~ 3700 3350
+$Comp
+L button U1
+U 1 1 57487031
+P 1400 1650
+F 0 "U1" V 1600 1600 60  0000 C CNN
+F 1 "button" V 1200 1550 60  0000 C CNN
+F 2 "bugs:button" H 1450 1650 60  0001 C CNN
+F 3 "" H 1450 1650 60  0000 C CNN
+	1    1400 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1250 1400 1250
+Wire Wire Line
+	1400 1250 1400 1350
+Wire Notes Line
+	850  850  850  2150
+Wire Notes Line
+	850  2150 1650 2150
+Wire Notes Line
+	1650 2150 1650 1850
+Wire Notes Line
+	1650 1850 3200 1850
+Wire Notes Line
+	3200 1850 3200 850 
+$Comp
+L BARREL_JACK CON1
+U 1 1 57487687
+P 450 1200
+F 0 "CON1" H 450 1450 50  0000 C CNN
+F 1 "BARREL_JACK" H 450 1000 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 450 1200 50  0001 C CNN
+F 3 "" H 450 1200 50  0000 C CNN
+	1    450  1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  1100 1200 1100
+Wire Wire Line
+	1200 1100 1200 1250
+Wire Wire Line
+	750  1300 1050 1300
+Wire Wire Line
+	1050 1300 1050 1050
+Wire Wire Line
+	750  1200 1050 1200
+Connection ~ 1050 1200
 $EndSCHEMATC
