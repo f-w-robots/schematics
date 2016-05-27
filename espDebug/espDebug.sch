@@ -274,17 +274,6 @@ Wire Wire Line
 Connection ~ 6550 3850
 Wire Wire Line
 	3050 3850 6550 3850
-$Comp
-L button U4
-U 1 1 571AAEA1
-P 6250 1500
-F 0 "U4" H 6300 1500 60  0000 C CNN
-F 1 "button" H 6300 1500 60  0000 C CNN
-F 2 "bugs:button" H 6300 1500 60  0001 C CNN
-F 3 "" H 6300 1500 60  0000 C CNN
-	1    6250 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6550 1800 6350 1800
 Wire Wire Line
@@ -298,4 +287,15 @@ Wire Wire Line
 	4850 2850 4550 2850
 Wire Wire Line
 	4850 1750 4850 2850
+$Comp
+L button U4
+U 1 1 571AAEA1
+P 6250 1350
+F 0 "U4" H 6450 1500 60  0000 C CNN
+F 1 "button" V 6050 1300 60  0000 C CNN
+F 2 "bugs:button" H 6300 1350 60  0001 C CNN
+F 3 "" H 6300 1350 60  0000 C CNN
+	1    6250 1350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

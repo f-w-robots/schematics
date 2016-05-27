@@ -144,11 +144,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 3700 6350 3700
 Wire Wire Line
-	6350 3700 6350 3900
-Wire Wire Line
-	6350 3900 6500 4000
-Wire Wire Line
-	6500 4100 5750 4000
+	6350 3700 6350 4000
 $Comp
 L CONN_01X01 P3
 U 1 1 572F745C
@@ -215,4 +211,12 @@ F 3 "" H 6700 4050 50  0000 C CNN
 	1    6700 4050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5750 4000 6300 4000
+Wire Wire Line
+	6300 4000 6300 4100
+Wire Wire Line
+	6300 4100 6500 4100
+Wire Wire Line
+	6350 4000 6500 4000
 $EndSCHEMATC

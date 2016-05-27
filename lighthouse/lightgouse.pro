@@ -1,4 +1,4 @@
-update=Пят 22 Крс 2016 19:54:56
+update=Пят 27 Тра 2016 12:22:18
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../libraries
 [eeschema/libraries]
 LibName1=lightgouse-rescue
 LibName2=power
@@ -59,4 +59,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=/home/siarhei/workspace/ROBOTS/rbt/schematics/libraries/bugs
+LibName31=bugs

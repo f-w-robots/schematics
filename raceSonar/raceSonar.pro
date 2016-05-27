@@ -1,4 +1,4 @@
-update=Аўт 17 Тра 2016 09:58:14
+update=Пят 27 Тра 2016 12:29:06
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/siarhei/workspace/ROBOTS/rbt/schematics/libraries/bugs
+LibName30=bugs
