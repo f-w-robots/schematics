@@ -271,8 +271,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 1450 6100 1450
 Wire Wire Line
-	2050 1350 2050 1800
-Wire Wire Line
 	2950 1350 3450 1350
 Wire Wire Line
 	3050 1050 3050 1350
@@ -286,7 +284,7 @@ Wire Wire Line
 	2950 1450 3250 1450
 Connection ~ 3050 1350
 Wire Wire Line
-	2050 1800 3050 1800
+	2000 1800 3050 1800
 Wire Wire Line
 	3050 1800 3050 1550
 Wire Notes Line
@@ -498,4 +496,38 @@ Wire Wire Line
 Wire Wire Line
 	750  1200 1050 1200
 Connection ~ 1050 1200
+Wire Wire Line
+	2000 1000 2000 1800
+Connection ~ 2000 1350
+$Comp
+L LED D1
+U 1 1 574DB2B9
+P 1650 800
+F 0 "D1" H 1650 900 50  0000 C CNN
+F 1 "LED" H 1650 700 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 1650 800 50  0001 C CNN
+F 3 "" H 1650 800 50  0000 C CNN
+	1    1650 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1000 1650 1000
+Wire Wire Line
+	1650 600  2150 600 
+Wire Wire Line
+	2150 600  2150 700 
+Wire Wire Line
+	2150 1000 2150 1050
+Connection ~ 2150 1050
+$Comp
+L R R5
+U 1 1 574DB6C9
+P 2150 850
+F 0 "R5" V 2230 850 50  0000 C CNN
+F 1 "500" V 2150 850 50  0000 C CNN
+F 2 "w_pth_resistors:rc03_vert" V 2080 850 50  0001 C CNN
+F 3 "" H 2150 850 50  0000 C CNN
+	1    2150 850 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
