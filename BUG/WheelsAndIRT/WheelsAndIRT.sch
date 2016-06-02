@@ -28,7 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:bug-cache
+LIBS:WheelsAndIRT-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -82,7 +82,7 @@ U 1 1 57485E20
 P 6450 1850
 F 0 "J1" H 6650 2350 50  0000 C CNN
 F 1 "RJ12" H 6300 2350 50  0000 C CNN
-F 2 "Connect:RJ12_E" H 6450 1850 50  0001 C CNN
+F 2 "bugs:RJ12_Client" H 6450 1850 50  0001 C CNN
 F 3 "" H 6450 1850 50  0000 C CNN
 	1    6450 1850
 	0    1    1    0   
@@ -141,27 +141,19 @@ Wire Wire Line
 Wire Wire Line
 	4300 3650 4150 3650
 Wire Wire Line
-	4150 3550 4300 3550
-Wire Wire Line
 	4300 3450 4150 3450
 Connection ~ 3200 3350
 Wire Wire Line
 	4150 3350 4300 3350
 Wire Wire Line
 	4250 3150 4300 3150
-Wire Wire Line
-	4300 1750 4300 3050
 Connection ~ 3200 3200
 Wire Wire Line
 	2800 3750 2800 3200
 Wire Wire Line
 	2800 3200 3200 3200
 Wire Wire Line
-	6000 1750 4300 1750
-Wire Wire Line
-	4250 3150 4250 1650
-Wire Wire Line
-	4250 1650 6000 1650
+	4250 1750 6000 1750
 Wire Wire Line
 	4200 2150 6000 2150
 Wire Wire Line
@@ -214,7 +206,25 @@ Wire Wire Line
 Wire Wire Line
 	5900 3250 5800 3250
 Wire Wire Line
-	5800 3250 5800 4150
+	5800 3250 5800 4650
 Wire Wire Line
-	5800 4150 5400 4150
+	4250 1750 4250 3150
+Wire Wire Line
+	4300 3050 4300 1650
+Wire Wire Line
+	4300 1650 6000 1650
+Wire Wire Line
+	5400 4150 5450 4150
+Wire Wire Line
+	5450 4150 5450 4750
+Wire Wire Line
+	5450 4750 4200 4750
+Wire Wire Line
+	4200 4750 4200 3550
+Wire Wire Line
+	4200 3550 4150 3550
+Wire Wire Line
+	4300 3550 4300 4650
+Wire Wire Line
+	4300 4650 5800 4650
 $EndSCHEMATC

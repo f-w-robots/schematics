@@ -222,6 +222,84 @@ F 3 "" H 3250 3850 50  0000 C CNN
 	1    3250 3850
 	0    1    1    0   
 $EndComp
+Text Label 3950 4900 0    60   ~ 0
+GND
+Text Label 4000 4600 0    60   ~ 0
+V5
+$Comp
+L RJ12 J3
+U 1 1 573B7287
+P 4250 4600
+F 0 "J3" H 4450 5100 50  0000 C CNN
+F 1 "RJ12" H 4100 5100 50  0000 C CNN
+F 2 "Connect:RJ12_E" H 4250 4600 50  0001 C CNN
+F 3 "" H 4250 4600 50  0000 C CNN
+	1    4250 4600
+	0    1    1    0   
+$EndComp
+Text Label 4000 4800 0    60   ~ 0
+V12
+Text Label 4000 4500 0    60   ~ 0
+TX
+Text Label 4000 4400 0    60   ~ 0
+RX
+Text Label 4000 4700 0    60   ~ 0
+DTR
+$Comp
+L CONN_01X02 P6
+U 1 1 573B7291
+P 3250 4900
+F 0 "P6" H 3250 5050 50  0000 C CNN
+F 1 "CONN_01X02" V 3350 4900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3250 4900 50  0001 C CNN
+F 3 "" H 3250 4900 50  0000 C CNN
+	1    3250 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L button U1
+U 1 1 57487031
+P 1400 1650
+F 0 "U1" V 1600 1600 60  0000 C CNN
+F 1 "button" V 1200 1550 60  0000 C CNN
+F 2 "bugs:button" H 1450 1650 60  0001 C CNN
+F 3 "" H 1450 1650 60  0000 C CNN
+	1    1400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L BARREL_JACK CON1
+U 1 1 57487687
+P 450 1200
+F 0 "CON1" H 450 1450 50  0000 C CNN
+F 1 "BARREL_JACK" H 450 1000 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 450 1200 50  0001 C CNN
+F 3 "" H 450 1200 50  0000 C CNN
+	1    450  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 574DB2B9
+P 1650 800
+F 0 "D1" H 1650 900 50  0000 C CNN
+F 1 "LED" H 1650 700 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 1650 800 50  0001 C CNN
+F 3 "" H 1650 800 50  0000 C CNN
+	1    1650 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 574DB6C9
+P 2150 850
+F 0 "R5" V 2230 850 50  0000 C CNN
+F 1 "500" V 2150 850 50  0000 C CNN
+F 2 "w_pth_resistors:rc03_vert" V 2080 850 50  0001 C CNN
+F 3 "" H 2150 850 50  0000 C CNN
+	1    2150 850 
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	5800 1650 5800 2550
 Wire Wire Line
@@ -266,8 +344,6 @@ Wire Wire Line
 	6350 4250 6350 1400
 Wire Wire Line
 	6350 1400 3650 1400
-Wire Wire Line
-	6100 1450 6100 2550
 Wire Wire Line
 	3700 1450 6100 1450
 Wire Wire Line
@@ -388,40 +464,6 @@ Wire Wire Line
 Connection ~ 3050 2550
 Wire Wire Line
 	3050 3650 3200 3650
-Text Label 3950 4900 0    60   ~ 0
-GND
-Text Label 4000 4600 0    60   ~ 0
-V5
-$Comp
-L RJ12 J3
-U 1 1 573B7287
-P 4250 4600
-F 0 "J3" H 4450 5100 50  0000 C CNN
-F 1 "RJ12" H 4100 5100 50  0000 C CNN
-F 2 "Connect:RJ12_E" H 4250 4600 50  0001 C CNN
-F 3 "" H 4250 4600 50  0000 C CNN
-	1    4250 4600
-	0    1    1    0   
-$EndComp
-Text Label 4000 4800 0    60   ~ 0
-V12
-Text Label 4000 4500 0    60   ~ 0
-TX
-Text Label 4000 4400 0    60   ~ 0
-RX
-Text Label 4000 4700 0    60   ~ 0
-DTR
-$Comp
-L CONN_01X02 P6
-U 1 1 573B7291
-P 3250 4900
-F 0 "P6" H 3250 5050 50  0000 C CNN
-F 1 "CONN_01X02" V 3350 4900 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3250 4900 50  0001 C CNN
-F 3 "" H 3250 4900 50  0000 C CNN
-	1    3250 4900
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	2950 4250 4850 4250
 Wire Notes Line
@@ -449,17 +491,6 @@ Wire Wire Line
 	3650 3400 3650 4500
 Connection ~ 3650 3400
 Connection ~ 3700 3350
-$Comp
-L button U1
-U 1 1 57487031
-P 1400 1650
-F 0 "U1" V 1600 1600 60  0000 C CNN
-F 1 "button" V 1200 1550 60  0000 C CNN
-F 2 "bugs:button" H 1450 1650 60  0001 C CNN
-F 3 "" H 1450 1650 60  0000 C CNN
-	1    1400 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 1250 1400 1250
 Wire Wire Line
@@ -474,17 +505,6 @@ Wire Notes Line
 	1650 1850 3200 1850
 Wire Notes Line
 	3200 1850 3200 850 
-$Comp
-L BARREL_JACK CON1
-U 1 1 57487687
-P 450 1200
-F 0 "CON1" H 450 1450 50  0000 C CNN
-F 1 "BARREL_JACK" H 450 1000 50  0000 C CNN
-F 2 "Connect:BARREL_JACK" H 450 1200 50  0001 C CNN
-F 3 "" H 450 1200 50  0000 C CNN
-	1    450  1200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	750  1100 1200 1100
 Wire Wire Line
@@ -499,17 +519,6 @@ Connection ~ 1050 1200
 Wire Wire Line
 	2000 1000 2000 1800
 Connection ~ 2000 1350
-$Comp
-L LED D1
-U 1 1 574DB2B9
-P 1650 800
-F 0 "D1" H 1650 900 50  0000 C CNN
-F 1 "LED" H 1650 700 50  0000 C CNN
-F 2 "LEDs:LED-3MM" H 1650 800 50  0001 C CNN
-F 3 "" H 1650 800 50  0000 C CNN
-	1    1650 800 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2000 1000 1650 1000
 Wire Wire Line
@@ -519,15 +528,6 @@ Wire Wire Line
 Wire Wire Line
 	2150 1000 2150 1050
 Connection ~ 2150 1050
-$Comp
-L R R5
-U 1 1 574DB6C9
-P 2150 850
-F 0 "R5" V 2230 850 50  0000 C CNN
-F 1 "500" V 2150 850 50  0000 C CNN
-F 2 "w_pth_resistors:rc03_vert" V 2080 850 50  0001 C CNN
-F 3 "" H 2150 850 50  0000 C CNN
-	1    2150 850 
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	6100 1450 6100 2550
 $EndSCHEMATC
