@@ -97,17 +97,6 @@ Text Label 6200 2050 0    60   ~ 0
 12V
 Text Label 6200 2150 0    60   ~ 0
 GND
-$Comp
-L CONN_01X01 P3
-U 1 1 57485E22
-P 5750 1950
-F 0 "P3" H 5750 2050 50  0000 C CNN
-F 1 "CONN_01X01" V 5850 1950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5750 1950 50  0001 C CNN
-F 3 "" H 5750 1950 50  0000 C CNN
-	1    5750 1950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4300 3850 4150 3850
 Wire Wire Line
@@ -165,7 +154,7 @@ Wire Wire Line
 	4200 2150 4200 3350
 Connection ~ 4200 3350
 Wire Wire Line
-	5950 1950 6000 1950
+	4050 1950 6000 1950
 $Comp
 L Arduino_Mini U2
 U 1 1 57485E1C
@@ -227,4 +216,8 @@ Wire Wire Line
 	4300 3550 4300 4650
 Wire Wire Line
 	4300 4650 5800 4650
+Wire Wire Line
+	4300 3250 4050 3250
+Wire Wire Line
+	4050 3250 4050 1950
 $EndSCHEMATC

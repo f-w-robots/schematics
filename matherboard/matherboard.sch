@@ -190,17 +190,6 @@ RX
 Text Label 4000 3650 0    60   ~ 0
 DTR
 $Comp
-L CONN_01X05 P5
-U 1 1 573B5742
-P 4200 1650
-F 0 "P5" H 4200 1950 50  0000 C CNN
-F 1 "CONN_01X05" V 4300 1650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 4200 1650 50  0001 C CNN
-F 3 "" H 4200 1650 50  0000 C CNN
-	1    4200 1650
-	0    -1   -1   0   
-$EndComp
-$Comp
 L CONN_01X02 P3
 U 1 1 573B67B7
 P 3250 2750
@@ -432,9 +421,9 @@ Wire Wire Line
 	4200 2000 4200 1850
 Connection ~ 3650 2000
 Wire Wire Line
-	4100 1950 4100 1850
+	4100 1800 4100 1950
 Wire Wire Line
-	3050 1950 4100 1950
+	4100 1950 3050 1950
 Wire Wire Line
 	3650 2350 3800 2350
 Wire Wire Line
@@ -530,4 +519,28 @@ Wire Wire Line
 Connection ~ 2150 1050
 Wire Wire Line
 	6100 1450 6100 2550
+$Comp
+L CONN_01X04 P5
+U 1 1 5750347D
+P 4400 750
+F 0 "P5" H 4400 1000 50  0000 C CNN
+F 1 "CONN_01X04" V 4500 750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 4400 750 50  0001 C CNN
+F 3 "" H 4400 750 50  0000 C CNN
+	1    4400 750 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 950  4250 1400
+Connection ~ 4250 1400
+Wire Wire Line
+	4350 950  4350 1150
+Connection ~ 4350 1150
+Wire Wire Line
+	4450 950  4450 1450
+Connection ~ 4450 1450
+Wire Wire Line
+	4100 1800 4550 1800
+Wire Wire Line
+	4550 1800 4550 950 
 $EndSCHEMATC
