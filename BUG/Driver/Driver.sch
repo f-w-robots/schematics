@@ -143,8 +143,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 3650 4550 3650
 Wire Wire Line
-	3550 3450 3550 3550
-Wire Wire Line
 	3500 3550 3650 3550
 Connection ~ 3550 3550
 Wire Wire Line
@@ -158,7 +156,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 2000 5100 2400
 Wire Wire Line
-	5100 2400 5900 2400
+	3550 2400 5900 2400
 Wire Wire Line
 	5900 2400 5900 3250
 Wire Wire Line
@@ -213,4 +211,21 @@ Wire Wire Line
 	6700 4700 6700 3450
 Wire Wire Line
 	6700 3450 5850 3450
+Connection ~ 3550 3450
+Connection ~ 5100 2400
+$Comp
+L R R1
+U 1 1 57878168
+P 3550 2800
+F 0 "R1" V 3630 2800 50  0000 C CNN
+F 1 "0" V 3550 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3480 2800 50  0001 C CNN
+F 3 "" H 3550 2800 50  0000 C CNN
+	1    3550 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2950 3550 3550
+Wire Wire Line
+	3550 2650 3550 2400
 $EndSCHEMATC

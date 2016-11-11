@@ -1,4 +1,4 @@
-update=Чцв 23 Чэр 2016 18:25:56
+update=Пят 15 Ліп 2016 17:59:34
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,13 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/siarhei/workspace/ROBOTS/schematics/libraries/bugs
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
