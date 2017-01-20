@@ -29,7 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:bugs
-LIBS:kidkit-cache
+LIBS:EduKit-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -254,17 +254,6 @@ F 3 "" H 4150 6500 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X02 P10
-U 1 1 587E5F52
-P 5900 6250
-F 0 "P10" H 5900 6400 50  0000 C CNN
-F 1 "BlueLED" V 6000 6250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5900 6250 50  0001 C CNN
-F 3 "" H 5900 6250 50  0000 C CNN
-	1    5900 6250
-	0    1    1    0   
-$EndComp
-$Comp
 L CONN_01X02 P9
 U 1 1 587E5FE3
 P 5550 6250
@@ -317,6 +306,17 @@ F 1 "R" V 4200 1100 50  0000 C CNN
 F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 4130 1100 50  0001 C CNN
 F 3 "" H 4200 1100 50  0000 C CNN
 	1    4200 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P10
+U 1 1 5881EF5D
+P 5900 6250
+F 0 "P10" H 5900 6400 50  0000 C CNN
+F 1 "Speaker" V 6000 6250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5900 6250 50  0001 C CNN
+F 3 "" H 5900 6250 50  0000 C CNN
+	1    5900 6250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -414,8 +414,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 1050 5000 1300
 Wire Wire Line
-	5400 3350 6350 3350
-Wire Wire Line
 	5000 1400 5000 2000
 Wire Wire Line
 	5650 2000 5650 2400
@@ -451,10 +449,6 @@ Wire Wire Line
 	2000 4000 2000 4550
 Wire Wire Line
 	2000 4550 3450 4550
-Wire Wire Line
-	3450 4550 3450 2400
-Wire Wire Line
-	3450 3300 3100 3300
 Wire Wire Line
 	3900 3450 3900 2550
 Wire Wire Line
@@ -620,11 +614,6 @@ Wire Wire Line
 	5500 5950 4250 5950
 Connection ~ 4250 5950
 Wire Wire Line
-	5850 6050 5850 5900
-Wire Wire Line
-	5850 5900 4250 5900
-Connection ~ 4250 5900
-Wire Wire Line
 	5600 6050 5600 5600
 Wire Wire Line
 	5600 5600 5800 5600
@@ -632,10 +621,6 @@ Wire Wire Line
 	5800 5600 5800 3650
 Wire Wire Line
 	5800 3650 5400 3650
-Wire Wire Line
-	5950 6050 5950 3550
-Wire Wire Line
-	5950 3550 5400 3550
 Wire Wire Line
 	6150 5800 6150 3750
 Wire Wire Line
@@ -662,4 +647,19 @@ Connection ~ 4050 1400
 Wire Wire Line
 	4000 900  4000 1400
 Connection ~ 4000 1400
+Wire Wire Line
+	3450 4550 3450 2400
+Wire Wire Line
+	3100 3300 3450 3300
+Wire Wire Line
+	5400 3350 6350 3350
+Wire Wire Line
+	4250 5900 5850 5900
+Wire Wire Line
+	5850 5900 5850 6050
+Connection ~ 4250 5900
+Wire Wire Line
+	5950 6050 5950 3550
+Wire Wire Line
+	5950 3550 5400 3550
 $EndSCHEMATC
